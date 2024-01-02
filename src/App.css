@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+:root{
+  --header-font:"DM Serif Display",serif;
+  --body-font:"Karla",sans-serif
+}
+body{
+  display: flex;
+  flex-direction: column;
+  background-color:hsl(0, 0%, 98%);;
+  font-family: var(--body-font);
+}
+/* .App {
+  text-align: center;
+} */
+.img{
+  display: none;
+}
+.app{
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header{
+  width: 100%;
+  height: 3%;
+  padding: 1rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(0, 0%, 98%);
+  /* color: aliceblue;
+  background-color: aqua; */
+}
+.navigation{
+  /* padding: 1rem; */
+  padding-top: 2rem;
+  height: fit-content;
+  gap: 1rem;
+}
+.logo{
+  padding: 1rem;
+  height: fit-content;
+}
+.logo_text{
+  font-family: var(--header-font);
+}
+.nav{
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: hsl(0, 0%, 98%);
+ 
+}
+.nav:hover{
+  border: 1px solid hsl(256, 26%, 20%)  ;
+   
+}
+.menu-btn{
+  display: none;
+}
+.mobileImgWrapper{
+  display: none;
+}
+
+
+.Intro{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  /* background: linear-gradient(to bottom, hsl(256, 26%, 20%) 70%, hsl(0, 0%, 98%) 30%); */
+  /* opacity: 30%; */
+  background-color:hsl(256, 26%, 20%)  ;
+  /* z-index: 0; */
+}
+.IntroHeader{
+  font-family: var(--header-font);
+  color: hsl(0, 0%, 98%);
+  font-size: 3.7rem;
+  line-height: 0.9;
+}
+.IntroPara{
+  color: hsl(0, 0%, 98%);
+  line-height: 1.8;
+}
+
+.intro-left{
+  position: absolute;
+  bottom: -50%;
+  left:0
+}
+
+.intro-right{
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* z-index: 1; */
+}
+.IntroFocus{
+  /* background-color: brown; */
+  display: flex;
+  padding: 8rem;
+  align-items: center;
+  /* gap:10rem; */
+  /* width: 100%; */
+  margin: auto auto;
+}
+.IntroText{
+/* opacity: 100%; */
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: -20rem;
+  padding: 1rem;
+  /* text-align: center; */
+  width: 50%;
+  gap: 2rem;
+  /* z-index: 20; */
+}
+.IntroPhoto{
+  /* background-color: antiquewhite; */
+  /* opacity: 100%; */
+  
+  width: 50%;
+  padding-left: 6rem;
+  /* z-index: 20; */
+}
+.fam{
+  background-color: black;
+  width: 540px;
+  height: 650px;
+}
+.secondFocusWrapper{
+  padding-top: 10rem;
+}
+.second{
+  display: flex;
+  /* background-color: aqua; */
+  flex-direction: column;
+  padding: 8rem;
+  width: 100%;
+  padding-top: 20rem;
+  gap: 2rem;
+}
+.secondTitle{
+  width: 100%;
+  height: 5rem;
+  align-items: start;
+  
+  
+  
+}
+.secondTitleHead{
+  font-family: var(--header-font);
+  font-size: 3.7rem;
+}
+.secondMenu{
+  display: flex;
+  align-items: center;
+  gap:2rem;
+}
+.secondFocus{
+  position: relative;
+  display: flex;
+  padding: 2rem;
+  /* padding-top: 5rem; */
+  background-color:hsl(256, 26%, 20%) ;
+  /* align-items: center;
+  justify-content: space-around; */
+  height: 16rem;
+}
+.secondFocusHeader{
+ 
+  font-family: var(--header-font);
+  font-size: 3.7rem;
+  color:hsl(0, 0%, 98%) ;
+}
+.secondFocusText{
+  width: 70%;
+  /* background-color: aquamarine; */
+  padding: 2rem;
+  padding-left: 1rem;
+}
+.secondFocusButton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  padding: 5rem;
+  /* background-color: bisque; */
+}
+
+.secondFocusPattern{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.itemTitle{
+  font-family: var(--header-font);
+  padding-bottom: 1rem;
+  font-size: 2.5rem;
+}
+.description{
+  padding-top: 2rem;
+  gap: 2rem;
+}
+.itemDescription{
+  line-height: 1.8;
+}
+
+.footer{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+.footerHeading{
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  
+  /* width: 100%; */
+}
+.footerMenu{
+  width: 100%;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  display:flex;
+  gap: 20rem;
+}
+.footerColumn{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+.footerLogo{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.coltopics{
+  display: flex;
+  flex-direction: column;
+}
+
+.Button{
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 98%);
+  padding: 1rem;
+  cursor: pointer;
+  
+}
+.Button:hover{
+  
+    border: 1px solid hsl(256, 26%, 20%)  ;
+     
+  
+}
+
+.socials{
+  display: flex;
+  gap: 1rem;
+}
+.MobileIntro{
+  display: none;
+}
+
+.MobileSecond{
+  display: none;
+}
+
+@media screen and (max-width:600px){
+.navigation{
+  display: none;
+}
+/* .MobileSecond{
+  display: block;
+} */
+.header{
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.MobilePage{
+  max-width: 600px;
+  width: fit-content;
+  
+}
+.img{
+  /* width: 100%; */
+  display: flex;
+  width: fit-content;
+}
+.menu-btn{
+  display: flex;
+}
+/* .landingbody{
+ display: none;
+} */
+/* .IntroWrap{
+display: none;
+} */
+.IntroPara{
+  text-align: center;
+}
+.Intro{
+  display: none;
+  
+}
+.secondFocusPattern{
+  display: none;
+}
+.secondMenu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.item{
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second{
+  padding-top: 8rem;
+  
+}
+.secondTitle{
+  padding-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.secondTitleHead{
+  text-align: center;
+}
+.description{
+  text-align: center;
+}
+.secondFocusWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.secondFocus{
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+}
+.secondFocusText{
+  width: 100%;
+  text-align: center;
+}
+.secondFocusButton{
+  width: 100%;
+}
+.footer{
+  max-width: 600px;
+  width: 100%;
+  align-items: center;
+}
+.footerMenu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+}
+.footerHeading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.footerColumn{
+  text-align: center;
+}
+
+
+
+
+}
+
+
+
+
