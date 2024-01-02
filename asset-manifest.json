@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Insure-Landing-Page-React/static/css/main.1bc56d49.css",
+    "main.js": "/Insure-Landing-Page-React/static/js/main.b1201407.js",
+    "index.html": "/Insure-Landing-Page-React/index.html",
+    "main.1bc56d49.css.map": "/Insure-Landing-Page-React/static/css/main.1bc56d49.css.map",
+    "main.b1201407.js.map": "/Insure-Landing-Page-React/static/js/main.b1201407.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1bc56d49.css",
+    "static/js/main.b1201407.js"
+  ]
+}
